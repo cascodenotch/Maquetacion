@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas", sans-serif;
+}
+
+.Barra {
+        border:0px solid;
+        height: 30%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        
+}
+
+.Home {
+    border:0px solid;
+    width: 33.33%;
+}
+
+.Galeria {
+    border:0px solid;
+    width: 33.33%;
+}
+
+.Blog {
+    border:0px solid;
+    width: 33.33%;
+}
+
+.container1 {
+    border:0px solid;
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    
+}

@@ -30,7 +30,7 @@ nav{
     display:flex;
 }
 
-.container3{
+article{
     border: 5px solid blue;
     width: 65%;
     display: flex;
@@ -67,36 +67,15 @@ footer{
 
 }
 
-.container3uno{
-    border: 5px solid green;
-    height: 20%;
 
-}
-
-.container3dos{
+section{
     border: 5px solid purple;
     height: 20%;
 
 }
 
-.container3tres{
-    border: 5px solid purple;
-    height: 20%;
 
-}
-
-.container3cuatro{
-    border: 5px solid yellowgreen;
-    height:15%;
-
-}
-
-.container4uno{
-    border: 5px solid aquamarine;
-    height:50%;
-}
-
-.container4dos{
+aside {
     border: 5px solid aquamarine;
     height:50%;
 }
