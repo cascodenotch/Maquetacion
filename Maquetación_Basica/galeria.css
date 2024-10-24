@@ -25,13 +25,19 @@
     text-align: center;
 }
 
+body {
+    border:0px solid transparent;
+}
+
 section{
-    border:5px solid yellow;
+    border:0px solid transparent;
     display: flex;
     flex-direction: row;
+    height: 47.5vh;
 }
 
 img{
-    border:6px solid red;
-   
+    border:0px solid transparent;
+    height: 100%;
+    width: 33.33%;
 }
