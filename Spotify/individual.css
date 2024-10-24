@@ -10,7 +10,7 @@
 /* HEADER */
 
 header{
-    border: 5px solid blue;
+    border: 5px solid transparent;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -42,7 +42,7 @@ header{
 }
 
 img{
-    border: 5px solid pink;
+      border: 5px solid pink;
     height: 100%;
     width: 10%;
 }
@@ -89,7 +89,7 @@ footer{
 
 /* CUERPO */
 
-/* CAJAS ORGANIZADAS EN COLUMNA */
+/* CAJAS ORGANIZADAS DE ARRIBA-ABAJO */
 
 .box-1{
     border: 5px solid plum;
@@ -100,7 +100,7 @@ footer{
     align-items: center;
 }
 
-/* CAJAS ORGANIZADAS EN FILA */
+/* CAJAS ORGANIZADAS DE IZQ-DERECHA */
 
 .box-2{
     border: 5px solid greenyellow;
@@ -109,17 +109,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-}
-
-/* GRID */
-
-.grid {
-    border: 5px solid white;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -148,6 +137,7 @@ section{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+    padding: 5px;
 }
 
 .boton1{
@@ -155,8 +145,8 @@ section{
     border-radius: 20px;
     background-color: pink;
     color: black;
-    height: 100%;
-    width: 50%;
+    padding: 10px;
+  
 }
 
 .boton2{
@@ -164,11 +154,95 @@ section{
     border-radius: 20px;
     background-color: black;
     color: white;
-    height: 100%;
-    width: 50%;
+    padding: 10px;
+}
+
+.texto-pequeño {
+    font-size: 10px;
 }
 
 /* SEGUNDA SECCIÓN */
 
+.columna {
+    border: 5px solid white;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+/* TERCERA SECCIÓN */
+
+.pequeña{
+    height:30vh;
+    width: 100%;
+}
+
+/* CUARTA SECCIÓN */
+
+.box-3-centrado{
+    border: 5px solid red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* QUINTA SECCIÓN */
+
+.planes {
+    border: 5px solid white;
+    border-radius: 20px;
+    background: #242424 ;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#individual {
+    color: #F7D1D6;
+}
+
+#background-individual {
+
+    background-color: #F7D1D6;
+    color: black;
+}
+
+#estudiantes {
+    color: #C4B2D5;
+}
+
+#background-estudiantes{
+
+    background-color:#C4B2D5;
+    color: black;
+}
+#duo{
+    color: #F8C861;
+}
+
+#background-duo{
+    background-color:#F8C861;
+    color: black;
+}
+
+#familiar {
+    color: #A5BBD1;
+}
+
+#background-familiar {
+
+    background-color: #A5BBD1;
+    color: black;
+}
+
+.texto-centrado {
+    text-align: center; 
+    font-size: 10px;
+}
 
