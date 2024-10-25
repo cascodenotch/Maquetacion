@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia</title>
+    <link rel="stylesheet" href="agencia.css">
+</head>
+<body>
+    <header><h2>Agencia de viajes</h2></header>
+
+    <section>
+        <h3>Quienes somos</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At expedita laudantium, molestias eos odit ipsum sed repudiandae consectetur facilis suscipit ex, accusantium minima non. Error vel enim aperiam accusantium repudiandae?</p>
+    </section>
+
+    <section>
+    <h3>Destinos mas visitados</h3>
+    <div class="section-horizontal">
+       <div class="cajas-destinos">Cadiz</div>
+       <div class="cajas-destinos">Malaga</div>
+       <div class="cajas-destinos">Valencia</div>
+    </div>
+    </section>
+
+    <section>
+        <h3>Contáctanos</h3>
+        <form>
+            <div class="contenedor-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="numPersonas">Número de personas:</label>
+            <input type="number" id="numPersonas" name="numPersonas" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <div class="section-horizontal">
+                <button class="boton" oneclick="guardarEntrada()">Solicitar info</button>
+                <button class="boton">Filtrar</button>
+            </div>
+
+        </div>
+
+        </form>
+
+    </section>
+
+<script>src="agencia.js"</script>
+
+</body>
+</html>
