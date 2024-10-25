@@ -34,14 +34,23 @@ function guardarEntrada(){
     
 //         if(arrayEntradas[i].origenEntrada == "Canarias"){
 //          arrayEntradasFiltradas.push(arrayEntradas[i]);
-//         console.log(arrayEntradasFiltradas);
+//          console.log(arrayEntradasFiltradas);
 //         }
 //     }
 // }
 
 function añadirSeccion (){
 
+let nuevaSeccion = document.getElementById("seccionFiltrada")
 let nuevoElemento = document.createElement("p");
-section.appendChild (nuevoElemento);
+
+    for (let i=0; i<arrayEntradas.length; i++){
     
+        if(arrayEntradas[i].origenEntrada == "Canarias"){
+        arrayEntradasFiltradas.push(arrayEntradas[i]);
+        }
+    }
+
+nuevoElemento.textContent = arrayEntradasFiltradas;
+nuevaSeccion.appendChild(nuevoElemento);
 }
