@@ -13,11 +13,11 @@ function guardarEntrada(){
 
     // crear un objeto con los valores del formulario
 
-    let entrada = {nombreEntrada: nombre,
-        origenEntrada: origen,
-        destinoEntrada: destino,
-        personasEntrada: numPersonas,
-        fechaEntrada: fecha,
+    let entrada = {nombre: nombre,
+        origen: origen,
+        destino: destino,
+        personas: numPersonas,
+        fecha: fecha,
     }
     
     // agregar los objetos al array 
@@ -32,7 +32,7 @@ function guardarEntrada(){
 
 //     for (let i=0; i<arrayEntradas.length; i++){
     
-//         if(arrayEntradas[i].origenEntrada == "Canarias"){
+//         if(arrayEntradas[i].destino == "Canarias"){
 //          arrayEntradasFiltradas.push(arrayEntradas[i]);
 //          console.log(arrayEntradasFiltradas);
 //         }
@@ -46,11 +46,11 @@ let nuevoElemento = document.createElement("p");
 
     for (let i=0; i<arrayEntradas.length; i++){
     
-        if(arrayEntradas[i].origenEntrada == "Canarias"){
+        if((arrayEntradas[i].destino.toLowerCase() == "canarias")||(arrayEntradas[i].destino.toLowerCase() == "mallorca") ||(arrayEntradas[i].destino.toLowerCase() == "galicia")){
         arrayEntradasFiltradas.push(arrayEntradas[i]);
         }
     }
 
-nuevoElemento.textContent = arrayEntradasFiltradas;
+nuevoElemento.textContent = JSON.stringify(arrayEntradasFiltradas);
 nuevaSeccion.appendChild(nuevoElemento);
 }
