@@ -7,44 +7,58 @@
     <link rel="stylesheet" href="agencia.css">
 </head>
 <body>
-    <header><h2>Agencia de viajes</h2></header>
+    <header><h1>Agencia de viajes</h1>
+    <h3 class="espacio">Te ayudamos a organizar tu viaje soñado</h3></header>
 
     <section>
-        <h3>Quienes somos</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At expedita laudantium, molestias eos odit ipsum sed repudiandae consectetur facilis suscipit ex, accusantium minima non. Error vel enim aperiam accusantium repudiandae?</p>
+        <h3 class="espacio">Quienes somos</h3>
+        <p class="espacio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At expedita laudantium, molestias eos odit ipsum sed repudiandae consectetur facilis suscipit ex, accusantium minima non. Error vel enim aperiam accusantium repudiandae?</p>
+        <p class="espacio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus, eos, nobis facilis ipsa quis molestiae ad veniam, distinctio rem cumque possimus iure libero? Recusandae quaerat voluptate ut soluta ipsa.</p>
     </section>
 
     <section>
-    <h3>Destinos mas visitados</h3>
+    <h3 class="espacio">Destinos mas visitados</h3>
     <div class="section-horizontal">
-       <div class="cajas-destinos">Cadiz</div>
-       <div class="cajas-destinos">Malaga</div>
-       <div class="cajas-destinos">Valencia</div>
+
+       <div class="cajas-destinos"><h4>Cadiz</h4>
+        <p>Historia y gastronomia</p>
+        <img src="caidz.jpg" alt="">
+        </div>
+
+       <div class="cajas-destinos"><h4>Málaga</h4>
+        <p>Playas y fiesta</p>
+        <img src="malaga.jpg" alt="">
+       </div>
+
+       <div class="cajas-destinos"><h4>Valencia</h4>
+        <p>Arquitectura y gastronomia</p>
+        <img src="valencia.jpg" alt="">
+       </div>
     </div>
     </section>
 
     <section>
-        <h3>Contáctanos</h3>
+        <h3 class="espacio">Contáctanos</h3>
         <form>
             <div class="contenedor-formulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="María Rodríguez">
 
             <label for="origen">Origen:</label>
-            <input type="text" id="origen" name="origen" required>
+            <input type="text" id="origen" name="origen" placeholder="Madrid" required>
 
             <label for="destino">Destino:</label>
-            <input type="text" id="destino" name="destino" required>
+            <input type="text" id="destino" name="destino" placeholder="Barcelona" required>
 
             <label for="numPersonas">Número de personas:</label>
-            <input type="number" id="numPersonas" name="numPersonas" required>
+            <input type="number" id="numPersonas" name="numPersonas" min="1" required>
 
             <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha" name="fecha" required>
+            <input type="date" id="fecha" name="fecha" min="2024-09-30" required>
 
             <div class="section-horizontal">
-                <button class="boton" oneclick="guardarEntrada()">Solicitar info</button>
-                <button class="boton">Filtrar</button>
+                <button type="button" class="boton" onclick="guardarEntrada()">Solicitar info</button>
+                <button type="button" class="boton" onclick="añadirSeccion()">Filtrar</button>
             </div>
 
         </div>
@@ -53,7 +67,11 @@
 
     </section>
 
-<script>src="agencia.js"</script>
+    <section>
+        <div id="seccionFiltrada"></div>
+    </section>
+
+<script src="agencia.js"></script>
 
 </body>
 </html>
