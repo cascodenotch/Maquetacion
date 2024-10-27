@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh; 
+}
+
+footer{
+
+    border: 1px solid black;
+    background-color: black;
+    color: grey;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: smaller;
+    
+    }
+
+.caja{
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh; 
+}
+
+.caja-negra{
+
+border:1px solid black;
+border-radius: 1cm;
+background-color: black;
+width: auto;
+height: auto;
+display: flex;
+flex-direction:column;
+
+}
+
+.caja-superior {
+
+border: 20px solid black;
+border-radius: 1cm;
+width: auto;
+height: auto;
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.caja-inferior {
+
+    border:10px solid black;
+    border-radius: 1cm;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    }
+
+/* FORMULARIO */
+
+form {
+
+border:1px solid black ;
+width: auto;
+height: auto;
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: flex-start
+    
+}
+
+label{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 0.3cm;
+}
+
+/* BOTONES */
+
+button{
+
+padding: 5px;
+margin: 0.1cm;
+border-radius: 1cm;
+font-size: small;
+width: 10cm;
+display: flex;
+flex-direction: row;
+justify-content:center;
+
+}
+
+.botones-redes{
+
+border: 1px solid white;
+background-color: black;
+color: white;
+
+}
+
+.boton-iniciosesion{
+
+border: 1px solid transparent;
+background-color: #76E579;
+color: black;
+margin-bottom: 0.5cm;
+
+}
+
+img{
+    height: 0.5cm;
+    width: 0.5cm;
+
+}
+
+/* PARA AJUSTAR ELEEMTOS */
+
+#espacio{
+
+margin-top: 1cm;
+margin-bottom: 0.5cm;
+
+}
+
+#espacio-hasolvidado{
+    margin-bottom: 0.5cm;
+}
+
+#texto-notienescuenta{
+    color: grey;
+}
+
+.centrar{
+ margin: auto;
+}
+
