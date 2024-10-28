@@ -67,33 +67,3 @@ section {
     flex-direction: row;
  }
 
-
-.caja-imagen{
-
-    border: 0px solid palevioletred;
-    height: auto;
-    width: 50%;
-    padding: 20px;
-}
-
- .caja-texto{
-    height: auto;
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
- }
-
-
-.caja-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.espacio-inferior{
-    margin: 10px;
-}
-
-
