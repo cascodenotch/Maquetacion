@@ -52,8 +52,8 @@ section{
     color: black;
     margin: 10px;
     padding: 10px;
-    height: 80%;
-    width: 20%;
+    height: 100%;
+    width: 25%;
 }
 
 .contenedor-formulario{
@@ -77,7 +77,7 @@ section{
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .espacio {

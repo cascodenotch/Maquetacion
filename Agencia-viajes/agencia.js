@@ -28,29 +28,33 @@ function guardarEntrada(){
 
 }   
 
-// function mostrarEntradas (){
+    function añadirSeccion (){
 
-//     for (let i=0; i<arrayEntradas.length; i++){
-    
-//         if(arrayEntradas[i].destino == "Canarias"){
-//          arrayEntradasFiltradas.push(arrayEntradas[i]);
-//          console.log(arrayEntradasFiltradas);
-//         }
-//     }
-// }
+        // nueva seccion, elemento y texto 
+        let nuevaSeccion = document.getElementById("seccionFiltrada")
+        let nuevoElemento = document.createElement("p");
+        let texto = "";
 
-function añadirSeccion (){
+        // para borrar los resultados de filtrar anteriores 
+        arrayEntradasFiltradas =[];
 
-let nuevaSeccion = document.getElementById("seccionFiltrada")
-let nuevoElemento = document.createElement("p");
+        // para añadir objetos al array que cumplan con las condiciones
+            for (let i=0; i<arrayEntradas.length; i++){
+            
+                if((arrayEntradas[i].destino.toLowerCase() == "canarias")||(arrayEntradas[i].destino.toLowerCase() == "mallorca") ||(arrayEntradas[i].destino.toLowerCase() == "galicia")){
+                arrayEntradasFiltradas.push(arrayEntradas[i]);
+                }
+            }
+        
+        // convertir a texto el array
+            for (let i=0; i<arrayEntradasFiltradas.length; i++){
+                texto = texto + `<strong> Nombre:</strong>${arrayEntradasFiltradas[i].nombre}, <strong> Destino:</strong> ${arrayEntradasFiltradas[i].destino}, <strong> Origen:</strong> ${arrayEntradasFiltradas[i].origen}, <strong> Número de personas:</strong>${arrayEntradasFiltradas[i].personas}, <strong> Fecha:</strong>${arrayEntradasFiltradas[i].fecha}<br>`;
+            }
+        
+        // cambiar el contenido del nuevo elemento
+        nuevoElemento.innerHTML = texto; 
 
-    for (let i=0; i<arrayEntradas.length; i++){
-    
-        if((arrayEntradas[i].destino.toLowerCase() == "canarias")||(arrayEntradas[i].destino.toLowerCase() == "mallorca") ||(arrayEntradas[i].destino.toLowerCase() == "galicia")){
-        arrayEntradasFiltradas.push(arrayEntradas[i]);
+        // añadir el nuevo elemento a la página
+        nuevaSeccion.appendChild(nuevoElemento);
         }
-    }
-
-nuevoElemento.textContent = JSON.stringify(arrayEntradasFiltradas);
-nuevaSeccion.appendChild(nuevoElemento);
-}
+        
