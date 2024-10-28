@@ -30,6 +30,7 @@ header{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 /* FOOTER */
@@ -48,6 +49,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .redes img {
@@ -89,6 +91,10 @@ input{
     margin-bottom: 15px;
 }
 
+#mensaje{
+
+    height: 5cm;
+}
 button{
 
     width: 10cm;
@@ -101,7 +107,5 @@ button{
 
 button:hover{
     background-color: plum;
-    transform: scale(1.2) ;
-    transition: 1.5s;
 }
 
