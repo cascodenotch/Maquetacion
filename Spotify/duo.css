@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.morado{
+    background-color: #2D46B9;
+    color: white;
+}
+
+.blanco{
+    background-color: #F4F4F4;
+    color: black;
+}
+
+.amarillo{
+    background-color: #F8C763;
+}
+
+.centrar {
+
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal{
+
+    border: 5px solid red;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.caja-1{
+
+    border: 5px solid green;
+    width: 40%;
+}
+
+.caja-2 {
+    border: 5px solid pink;
+    width: 40%;
+}
+
+.justificar-izquierda{
+    text-align: left;
+}
+
+.espacio-lineas{
+margin-bottom: 20px;
+}
