@@ -1,117 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Bebas", sans-serif;
 }
 
 /* CONTENEDORES PRINCIPALES */
 .caja-principal{
-    border: 1px solid green;
-    height: 90vh;
+    border: 0px solid green;
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
+    position: static;
 }
 
 .caja-inferior{
-    border: 1px solid red;
-    height: 10vh;
+    border: 0px solid red;
+    width: 100%;
+    min-height: 10vh;
+    position: static;
 }
 
 .caja-imagen{
-    border: 1px solid orange;
+    border: 0px solid orange;
     width: 50%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    padding: 70px;
+    align-content: center;
+    padding: 30px;
 }
 
 .caja-login{
-    border: 1px solid blue;
+    border: 0px solid blue;
     width: 50%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 50px;
-    padding-right: 350px;
-    padding-bottom: 50px;
+    align-items: center;
 }
 
 .columna-login{
-    border: 5px solid orange;
+    border: 0px solid red;
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja-enlaces{
-    border: 1px solid yellowgreen;
+    border: 0px solid yellowgreen;
+    width: 100%;
+    height: 50%;
     font-size: smaller;
     color: gray;
     display: flex;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
-    height: 50%;
     gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
 }
 
 /* FORMULARIO */
 
 form{
+
     border: 1px solid grey;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
     margin-bottom: 10px;
     padding: 30px;
+    position: static;
 }
 
 .caja-registro{
     border: 1px solid grey; 
+    height: auto;
+    width: 100%;
     text-align: center;
     gap: 10px;
     margin-bottom: 10px;
     padding: 10px;
+    position: static;
 }
 
 input{
     border:1px solid grey;
     background-color: #FAFAFA;
     width: 100%;
+    padding: 5px;
     }
 
 button{
     border: 0px;
-    border-radius: 1cm;
+    border-radius: 20px;
     padding: 5px;
     background-color: #61B3F7;
     color: white;
     font-weight: bold;
+    font-size: medium;
     width: 100%;
 }
 
 .caja-descarga{
 
-border: 1px solid orangered;
+border: 0px solid pink;
+height: auto;
+width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+position: static;
+flex-wrap: wrap;
 }
 
 /* OTROS */
-
-.espacio{
-    margin-bottom: 20px;
-}
 
 .bold{
 font-weight: bold;
 }
 
 .blue{
-
     color: #385185;
 }
 
@@ -119,15 +144,54 @@ font-weight: bold;
     color: #61B3F7;
 }
 
-a{
+a, a:visited{
     text-decoration: none;
 }
 
 #tipografiaInsta{
     font-size: xx-large;
+    font-family:"Cedarville Cursive", cursive;
 }
 
 #caja-sinborde{
     border: transparent;
 }
 
+#fb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #385185;
+ 
+}
+
+#fb img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.smaller{
+    font-size: smaller;
+}
+
+@media screen and (max-width:875px){
+
+    .caja-imagen{display: none;}
+    .caja-login {justify-content: center;}
+
+}
+
+@media screen and (max-width:450px){
+
+    .caja-imagen{display:none;}
+    .caja-login {justify-content: center;}
+
+    form{padding: 0;}
+    .caja-registro{padding: 0;}
+
+    form {border:0px solid;}
+    .caja-registro{border:0px solid;}
+
+}
