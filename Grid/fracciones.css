@@ -1,0 +1,52 @@
+.gridFracciones{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20fr 10fr 20fr 10fr 20fr 10fr;
+    grid-template-rows: 5fr 1fr;
+}
+
+.a{
+    background-color: greenyellow;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.b{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.c{
+    background-color: greenyellow;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.d{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+.e{
+    background-color: greenyellow;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+.f{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+

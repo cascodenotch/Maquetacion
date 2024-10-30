@@ -1,0 +1,105 @@
+.gridLineas{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [x0]1fr[x1]1fr[x2]1fr[x3]1fr[x4];;
+    grid-template-rows:[y0]1fr[y1]1fr[y2]1fr[y3]1fr[y4]1fr[y5]1fr[y6];
+}
+
+/* CAJA NEGRA */
+
+.header{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    grid-column: x0/x4;
+    grid-row: y0/y1;
+}
+
+/* CAJA AZUL */
+
+.cuerpo{
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+    text-align: left;
+    grid-column: x0/x3;
+    grid-row: y1/y5;
+    padding: 10px;
+    gap: 10px;
+
+    display: grid;
+    grid-template-columns: [x0]1fr[x1]1fr[x2];
+    grid-template-rows:[y0]1fr[y1]1fr[y2];
+}
+
+.contenido{
+    border:1px solid white;
+    grid-column: x0/x2 ;
+    grid-row: y0/y1;
+}
+
+.tema1 {
+    border:1px solid white;
+    grid-column: x0/x1 ;
+    grid-row: y1/y2;
+}
+
+.tema2 {
+    border:1px solid white;
+    grid-column: x1/x2 ;
+    grid-row: y1/y2;
+}
+
+/* CAJA MORADA */
+
+.footer{
+    background-color: blueviolet;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    grid-column: x0/x4;
+    grid-row: y5/y6;
+    padding: 10px;
+    gap: 10px;
+
+    display: grid;
+    grid-template-columns: [x0]1fr[x1]1fr[x2];
+    grid-template-rows:[y0]1fr[y1];
+}
+
+.footer-izq {
+    border: 1px solid black;
+    color: black;
+    grid-column: x0/x1;
+}
+
+.footer-dcha {
+    border: 1px solid black;
+    color: black;
+    grid-column: x1/x2;
+}
+
+/* CAJA AGUAMARINA */
+.menu{
+    background-color: aquamarine;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    grid-column: x3/x4;
+    grid-row: y1/y5;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: [x0]1fr[x1];
+    grid-template-rows:[y0]1fr[y1]1fr[y2]1fr[y3]1fr[y4];
+}
+
+
+.menu1{
+    border: 1px solid black;
+    color: black;
+}

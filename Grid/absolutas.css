@@ -1,0 +1,54 @@
+
+.gridAbsolutas{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 100px 300px;
+    grid-template-rows:200px 200px;
+}
+
+
+.a{
+    background-color: green;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.b{
+    background-color: orange;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.c{
+    background-color: orangered;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.d{
+    background-color: red;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+.e{
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+.f{
+    background-color: yellow;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+} 
+
+
