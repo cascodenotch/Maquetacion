@@ -1,15 +1,66 @@
 .gridAreas{
-
-        height: 100vh;
-        display:grid;
-        grid-template-areas:  "header image"
-                              "aside contenido"
-                              "aside2 texto"
-                              "footer";
-    } 
+    height: 100vh;
+    display:grid;
+    grid-template-areas:  
+    "header header image"                  
+    "aside  contenido contenido"
+    "aside contenido contenido"
+    "footer footer footer";
+} 
     
-.a{ grid-area: header;}
-.b{ grid-area: image;}
-.c{ grid-area: aside;}
-.d{ grid-area: contenido;} 
+.a {
+    grid-area: header;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+}
+
+.b {
+    grid-area: image;
+    background-color: brown ;
+    color: white;
+    text-align: center;}
+
+.c { 
+    grid-area: aside;
+    background-color: orange;
+    display: grid;
+    grid-template-areas:
+    "asidehijo"
+    "asidehijo-"
+    "asidehijo";
+    padding: 10px;
+}
+
+.asidehijo{
+    background-color: white;
+    color: orangered;
+    text-align: center;
+}
+
+.d{ 
+    grid-area: contenido;
+    background-color: red;
+    display: grid;
+    grid-template-areas: 
+    "contenido"
+    "texto";
+    padding: 10px;
+    gap: 10px;  
+} 
+
+.contenidohijo{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+.e { 
+    grid-area: footer;
+    background-color: brown;
+    color: white;
+    text-align: center;
+} 
+
+
     

@@ -69,21 +69,21 @@
 }
 
 .footer-izq {
-
     border: 1px solid black;
-    color: black;
+    color: white;
     grid-column: x0/x1;
     grid-row: y0/y1;
 }
 
 .footer-dcha {
     border: 1px solid black;
-    color: black;
+    color: white;
     grid-column: x1/x2;
     grid-row: y0/y1;
 }
 
 /* CAJA AGUAMARINA */
+
 .menu{
     background-color: aquamarine;
     color: white;
