@@ -1,0 +1,15 @@
+.gridAreas{
+
+        height: 100vh;
+        display:grid;
+        grid-template-areas:  "header image"
+                              "aside contenido"
+                              "aside2 texto"
+                              "footer";
+    } 
+    
+.a{ grid-area: header;}
+.b{ grid-area: image;}
+.c{ grid-area: aside;}
+.d{ grid-area: contenido;} 
+    
