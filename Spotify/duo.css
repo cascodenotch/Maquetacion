@@ -7,6 +7,8 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* COLORES FONDO Y TEXTO */
+
 .morado{
     background-color: #2D46B9;
     color: white;
@@ -17,40 +19,56 @@
     color: black;
 }
 
-.amarillo{
-    background-color: #F8C763;
-}
+/* DISPOSICIONES CAJAS */
 
 .centrar {
 
-    border: 5px solid orange;
+    border: 0px solid orange;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 30px;
 }
 
 .horizontal{
 
-    border: 5px solid red;
+    border: 0px solid red;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 30px ;
    
 }
 
 .caja-1{
-
-    border: 5px solid green;
+    border: 0px solid green;
     width: 40%;
 }
 
 .caja-2 {
-    border: 5px solid pink;
+    border: 0px solid pink;
     width: 40%;
 }
+
+.caja-2 ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.caja-2 ul li::before {
+    content: '✓'; 
+    margin-right: 8px;
+}
+
+.borde-derecho {
+    border-right: 2px solid #ccc; 
+}
+
+/* AJUSTES DE TEXTO */
 
 .justificar-izquierda{
     text-align: left;
@@ -58,4 +76,126 @@
 
 .espacio-lineas{
 margin-bottom: 20px;
+}
+
+.espacio-objetos{
+    margin-bottom: 30px;
+}
+
+.texto-pequeño{
+    font-size: smaller;
+}
+
+a{
+    color: white;
+}
+
+/* BOTONES */
+
+button{
+    border: 1px solid transparent;
+    border-radius: 1cm;
+    background-color: #F8C763;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.boton-2{
+    border: 2px solid #F8C763;
+    background-color: transparent;
+    color:#F8C763;
+
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    border: 0px solid blue;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+}
+.logoheader{
+    border: 0px solid red;
+    width: 65%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoheader img{
+    height: auto;
+    width: auto;
+}
+
+.navegacion{
+    border: 0px solid green;
+    width: 35%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    border: 0px solid blue;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.logofooter{
+    border: 0px solid red;
+    width: 65%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logofooter img{
+    height: auto;
+    width: auto;
+}
+
+.logosredes{
+    border: 0px solid green;
+    width: 35%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.logosredes img{
+    height: 100%;
+    width: auto;
 }
