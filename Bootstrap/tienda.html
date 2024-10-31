@@ -31,16 +31,18 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                   CATEGORÍAS
                 </a>
-                <!-- <ul class="dropdown-menu">
+                <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul> -->
+                </ul>
               </li>
 
             </ul>
-              <button class="btn btn-light" type="submit">CARRITO</button>
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="mostrar()">
+                CARRITO
+              </button>
           </div>
         </div>
       </nav>
@@ -53,88 +55,110 @@
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/pantalones_tallealto.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre1">Pantalón suleto gris</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio1">20</p>
+                <a href="#" class="btn btn-dark" onclick="añadir1()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/vestido_tunico.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre2">Vestido túnico</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio2">18</p>
+                <a href="#" class="btn btn-dark" onclick="añadir2()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/falda_print.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre3">Falda print</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio3">12</p>
+                <a href="#" class="btn btn-dark" onclick="añadir3()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/cardigan_largo_rayas.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre4">Cardigan largo</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio4">22</p>
+                <a href="#" class="btn btn-dark" onclick="añadir4()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/falda_mini_zebra.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre5">Falda mini zebra</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio5">10</p>
+                <a href="#" class="btn btn-dark" onclick="añadir5()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/mono_overol.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre6">Mono overol</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio6">10</p>
+                <a href="#" class="btn btn-dark" onclick="añadir6()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/vestido_jersey.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre7">Vestido jersey</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio7">10</p>
+                <a href="#" class="btn btn-dark" onclick="añadir7()">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="/Bootstrap/imagenes/pantalon_ancho.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Pantalón suleto gris</h5>
+                <h5 class="card-title" id="nombre8">Pantalón ancho</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">20€</p>
-                <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                <p class="card-text" id="precio8">10</p>
+                <a href="#" class="btn btn-dark" onclick="añadir8()">Añadir al carrito</a>
                 </div>
             </div>
 
         </div>
     </div>
-    
-    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al carrito</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p id="resultado-prendas"></p>
+        </div> 
+        <div class="modal-footer">
+          <p id="total"></p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="tienda.js"></script>
+
   </body>
 
 </html>
