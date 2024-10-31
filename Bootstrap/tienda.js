@@ -13,7 +13,6 @@ function añadir1(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir2(){
@@ -27,7 +26,6 @@ function añadir2(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir3(){
@@ -41,7 +39,6 @@ function añadir3(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir4(){
@@ -55,7 +52,6 @@ function añadir4(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 
@@ -70,7 +66,6 @@ function añadir5(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir6(){
@@ -84,7 +79,6 @@ function añadir6(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir7(){
@@ -98,7 +92,6 @@ function añadir7(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 function añadir8(){
@@ -112,7 +105,6 @@ function añadir8(){
     }
 
     arrayProductos.push(producto);
-    console.log (arrayProductos)
 }
 
 // MOSTRAR CARRITO 
