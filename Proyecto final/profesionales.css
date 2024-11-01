@@ -41,7 +41,7 @@ nav {
     border: 5px solid pink;
     background-color: black;
     color: white;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -57,8 +57,8 @@ nav {
     background-color: #1A1A1A;
     border: 0px solid yellow;
     border-radius: 2px;
-    height: 500px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -84,3 +84,7 @@ nav {
     height: 100%;
     width: auto;
 }
+
+/* Ajustes de espacio */
+
+h4{margin-bottom: 10px;};
