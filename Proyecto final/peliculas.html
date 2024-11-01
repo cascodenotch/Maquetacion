@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link rel="stylesheet" href="peliculas.css">
+</head>
+<body>
+
+     <!-- header -->
+     <header>
+        <a href="portada.html">
+            <img src="imagenes/logo.png" alt="logoIMDb">
+        </a>
+        <nav>
+            <a href="peliculas.html">Películas</a>
+            <a href="profesionales.html">Profesionales</a>
+         </nav>
+    </header>
+    
+     <!-- contenido -->
+    <section class="caja-principal">
+
+    <!-- fichas películas -->
+        <div class="caja-vertical">
+            <div class="caja-imagen">
+                <img src="imagenes/pinguino.jpg" alt="">
+            </div>
+            <div class="caja-atributos">
+                <h4>El pinguino</h4>
+                <p>Año</p>
+                <p>Género</p>
+                <p>Nacionalidad</p>
+                <p>Director</p>
+                <p>Escritor</p>
+                <p>Actores</p>
+                <p>Idioma</p>
+                <p>Plataforma</p>
+                <p>nMCU</p>
+                <p>Productor</p>
+                <p>Distribuidor</p>
+                <p>Plataforma</p>
+                <p>Personaje principal</p>
+            </div>
+        </div>
+
+        <div class="caja-vertical">
+            <div class="caja-imagen">
+                <img src="imagenes/pinguino.jpg" alt="">
+            </div>
+            <div class="caja-atributos">
+                <h4 id="tit0"></h4>
+                <p>Año</p>
+                <p>Género</p>
+                <p>Nacionalidad</p>
+                <p>Director</p>
+                <p>Escritor</p>
+                <p>Actores</p>
+                <p>Idioma</p>
+                <p>Plataforma</p>
+                <p>nMCU</p>
+                <p>Productor</p>
+                <p>Distribuidor</p>
+                <p>Plataforma</p>
+                <p>Personaje principal</p>
+            </div>
+        </div>
+
+</section>
+
+<section class="caja-formulario">
+    <form>
+        <h2>Añade una película al archivo</h2>
+
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="año">Año</label>
+        <input type="text" id="año" name="año">
+
+        <label for="genero">Género</label>
+        <input type="text" id="genero" name="genero">
+
+        <label for="nacionalidad">Nacionalidad</label>
+        <input type="text" id="nacionalidad" name="nacionalidad">
+
+        <label for="idioma">Idioma</label>
+        <input type="text" id="idioma" name="idioma">
+
+        <label for="plataforma">Plataforma</label>
+        <input type="text" id="plataforma" name="plataforma">
+
+        <label for="isMCU">nMCU</label>
+        <input type="text" id="isMCU" name="isMCU">
+
+        <label for="productor">Productor</label>
+        <input type="text" id="productor" name="productor">
+
+        <label for="distribuidor">Distribuidor</label>
+        <input type="text" id="distribuidor" name="distribuidor">
+
+        <label for="personaje">Personaje</label>
+        <input type="text" id="personaje" name="personaje">
+
+        <label for="foto">Foto</label>
+        <input type="file" id="foto" name="foto">
+        
+        <button type="button" onclick="añadir()">Guardar</button>
+    </form>
+
+</section>
+
+    
+<script src="Movie.js"></script>
+    
+</body>
+</html>
