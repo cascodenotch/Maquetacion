@@ -1,6 +1,6 @@
 class Movie {
 
-    constructor (title, releaseYear, genre, nationality, language, plataforma, isMcu, producer, distributor, mainCharacterName, photo){
+    constructor (title, releaseYear, genre, nationality, language, plataforma, producer, distributor, mainCharacterName, isMcu, photo){
     this.title = title;
     this.releaseYear = releaseYear;
     this.genre = genre; 
@@ -10,28 +10,28 @@ class Movie {
     this.director = "";
     this.writer = "";
     this.plataforma = plataforma;
-    this.isMCU = isMcu;
     this.producer = producer;
     this.distributor = distributor;
     this.mainCharacterName = mainCharacterName;
+    this.isMCU = isMcu;
     this.photo = photo;
     }   
 
     mostrarDatos (){
 
-        let datos = "Título: " + this.title + "<br>" +
-        "Año: " + this.releaseYear + "<br>" +
-        "Genero: " + this.genre + "<br>" +
-        "Nacionalidad: " + this.nationality + "<br>" +
-        "Idioma: " + this.language + "<br>" +
-        "Actores: " + this.actors + "<br>" +
-        "Director: " + this.director + "<br>" +
-        "Escritor: " + this.writer + "<br>" +
-        "Plataforma: " + this.plataforma + "<br>" +
-        "MCU: " + this.isMCU + "<br>" +
-        "Productor: " + this.producer + "<br>" +
-        "Distribuidor: " + this.distributor + "<br>" +
-        "Personaje principal: " + this.mainCharacterName
+        let datos = "<h4 class='espacio10'>Título: " + this.title + "</h4>" +
+                 "<p>Año: " + this.releaseYear + "</p>" +
+                 "<p>Género: " + this.genre + "</p>" +
+                 "<p>Nacionalidad: " + this.nationality + "</p>" +
+                 "<p>Idioma: " + this.language + "</p>" +
+                 "<p>Actores: " + this.actors + "</p>" + 
+                 "<p>Director: " + this.director + "</p>" +
+                 "<p>Escritor: " + this.writer + "</p>" +
+                 "<p>Plataforma: " + this.plataforma + "</p>" +
+                 "<p>Productor: " + this.producer + "</p>" +
+                 "<p>Distribuidor: " + this.distributor + "</p>" +
+                 "<p>Personaje principal: " + this.mainCharacterName + "</p>" +
+                 "<p>MCU: " + (this.isMCU ? "Sí" : "No") + "</p>";
        
         return datos; 
     }
@@ -52,14 +52,14 @@ function añadir (){
     let nacionalidad = document.getElementById("nacionalidad").value;
     let idioma = document.getElementById("idioma").value;
     let plataforma = document.getElementById("plataforma").value;
-    let mcu = document.getElementById("isMCU").value;
     let productor = document.getElementById("productor").value;
     let distribuidor = document.getElementById("distribuidor").value;
     let personaje = document.getElementById("personaje").value
+    let mcu = document.getElementById("isMCU").checked;
     let foto = document.getElementById("foto").value
 
     // crear un nuevo objeto 
-    let nuevaPeli = new Movie (titulo, año, genero, nacionalidad, idioma,plataforma, mcu, productor, distribuidor, personaje, foto);
+    let nuevaPeli = new Movie (titulo, año, genero, nacionalidad, idioma,plataforma, productor, distribuidor, personaje, mcu,foto);
     
     // crear caja vertical 
     let nuevaCaja = document.createElement("div");
@@ -78,7 +78,8 @@ function añadir (){
     cajaAtributos.innerHTML = nuevaPeli.mostrarDatos();
 
     // añadir las nuevas cajas
-    document.querySelector(".caja-principal").appendChild(nuevaCaja);
+    cajaPrincipal = document.getElementById("principal")
+    cajaPrincipal.appendChild(nuevaCaja);
   
 }
 

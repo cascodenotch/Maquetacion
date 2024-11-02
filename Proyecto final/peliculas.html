@@ -20,7 +20,7 @@
     </header>
     
      <!-- contenido -->
-    <section class="caja-principal">
+    <section class="caja-principal" id="principal">
 
     <!-- fichas películas -->
         <div class="caja-vertical">
@@ -28,7 +28,7 @@
                 <img src="imagenes/mommy.jpg" alt="">
             </div>
             <div class="caja-atributos">
-                <h4>Título: Mommy</h4>
+                <h4 class="espacio10">Título: Mommy</h4>
                 <p>Año: 2014</p>
                 <p>Género: Drama</p>
                 <p>Nacionalidad: Canada </p>
@@ -37,10 +37,10 @@
                 <p>Actores: Anne Dorval, Suzzanne Clement</p>
                 <p>Idioma: Francés</p>
                 <p>Plataforma: Movistar Plus</p>
-                <p>nMCU:</p>
                 <p>Productor: </p>
                 <p>Distribuidor: Metafilms</p>
                 <p>Personaje principal:</p>
+                <p>¿Es parte del MCU? No </p>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                 <img src="imagenes/incendies.jpg" alt="">
             </div>
             <div class="caja-atributos">
-                <h4>Título: Incendies</h4>
+                <h4 class="espacio10">Título: Incendies</h4>
                 <p>Año: 2010</p>
                 <p>Género: Misterio </p>
                 <p>Nacionalidad: Canada</p>
@@ -58,10 +58,10 @@
                 <p>Actores: Lubna Azabal, Melissa Desormeaux</p>
                 <p>Idioma: Francés</p>
                 <p>Plataforma: Movistar plus</p>
-                <p>nMCU: </p>
                 <p>Productor: TS Productions</p>
                 <p>Distribuidor: </p>
                 <p>Personaje principal: </p>
+                <p>¿Es parte del MCU? No </p>
             </div>
         </div>
 
@@ -70,7 +70,7 @@
                 <img src="imagenes/parasitos.jpg" alt="">
             </div>
             <div class="caja-atributos">
-                <h4>Título: Parasitos</h4>
+                <h4 class="espacio10">Título: Parasitos</h4>
                 <p>Año: 2019</p>
                 <p>Género: Thriller</p>
                 <p>Nacionalidad: Corea del sur</p>
@@ -79,10 +79,10 @@
                 <p>Actores: Song Kang-ho</p>
                 <p>Idioma: Coreano</p>
                 <p>Plataforma: Movistar plus</p>
-                <p>nMCU</p>
                 <p>Productor: Barunson E&A</p>
                 <p>Distribuidor: </p>
                 <p>Personaje principal: </p>
+                <p>¿Es parte del MCU? No </p>
             </div>
         </div>
 
@@ -91,7 +91,7 @@
 
 <section class="caja-formulario">
     <form>
-        <h2>Añade una película al archivo</h2>
+        <h2 class="espacio10">Añade una película al archivo</h2>
 
         <label for="titulo">Título</label>
         <input type="text" id="titulo" name="titulo">
@@ -111,9 +111,6 @@
         <label for="plataforma">Plataforma</label>
         <input type="text" id="plataforma" name="plataforma">
 
-        <label for="isMCU">nMCU</label>
-        <input type="text" id="isMCU" name="isMCU">
-
         <label for="productor">Productor</label>
         <input type="text" id="productor" name="productor">
 
@@ -121,10 +118,16 @@
         <input type="text" id="distribuidor" name="distribuidor">
 
         <label for="personaje">Personaje</label>
-        <input type="text" id="personaje" name="personaje">
+        <input type="text" id="personaje" name="personaje" class="espacio10">
+
+        <div class="checkbox espacio10">
+            <label for="isMCU">¿Es parte del MCU?</label>
+            <input type="checkbox" id="isMCU" name="isMCU">
+            <span>Marca la casilla si la película forma parte del universo Marvel, de lo contrario, no la marques.</span>
+        </div>
 
         <label for="foto">Foto</label>
-        <input type="file" id="foto" name="foto">
+        <input type="file" id="foto" name="foto" class="espacio10">
         
         <button type="button" onclick="añadir()">Guardar</button>
     </form>
