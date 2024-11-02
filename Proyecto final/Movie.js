@@ -19,7 +19,7 @@ class Movie {
 
     mostrarDatos (){
 
-        let datos = "<h4 class='espacio10'>Título: " + this.title + "</h4>" +
+        let datos = "<h4 class=espacio10>Título: " + this.title + "</h4>" +
                  "<p>Año: " + this.releaseYear + "</p>" +
                  "<p>Género: " + this.genre + "</p>" +
                  "<p>Nacionalidad: " + this.nationality + "</p>" +
@@ -31,15 +31,16 @@ class Movie {
                  "<p>Productor: " + this.producer + "</p>" +
                  "<p>Distribuidor: " + this.distributor + "</p>" +
                  "<p>Personaje principal: " + this.mainCharacterName + "</p>" +
-                 "<p>MCU: " + (this.isMCU ? "Sí" : "No") + "</p>";
+                 "<p>MCU: " + this.isMCU + "</p>";
        
         return datos; 
     }
 
     mostrarImagen (){
 
-        let imagen = this.imagen;
-        return imagen; 
+    let photoUrl = URL.createObjectURL(this.photo);
+    return "<img src=" + photoUrl + "</img>"
+
     }
 }
 
@@ -56,9 +57,9 @@ function añadir (){
     let distribuidor = document.getElementById("distribuidor").value;
     let personaje = document.getElementById("personaje").value
     let mcu = document.getElementById("isMCU").checked;
-    let foto = document.getElementById("foto").value
+    let foto = document.getElementById("foto").files[0];
 
-    // crear un nuevo objeto 
+    // crear un nuevo objeto con los inputs
     let nuevaPeli = new Movie (titulo, año, genero, nacionalidad, idioma,plataforma, productor, distribuidor, personaje, mcu,foto);
     
     // crear caja vertical 
