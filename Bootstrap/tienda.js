@@ -119,15 +119,17 @@ function mostrar(){
     // Suma de los precios de los elementos en el carrito 
 
     arrayProductos.forEach(producto=>{
-        total += Number(producto.precio)}
+        total +=  Number(producto.precio.replace('€', ''))}
     )
 
     totalString =`TOTAL: ${total}€`;
 
+
+
     // Devolver el nombre y precio de los elementos en el carrito 
 
     arrayProductos.forEach(producto =>{
-       listado += `PRENDA: ${producto.nombre}, ${producto.precio}€<br>`} 
+       listado += `PRENDA: ${producto.nombre}, ${producto.precio}<br>`} 
     )
 
     // Añadir al HTML
