@@ -101,3 +101,15 @@ nav ul li a:hover{
 .texto-amarillo{
     color: #F5C532;
 }
+
+@media screen and (max-width:1023px){
+    .caja-principal {flex-direction: column;}
+    #carouselExample {width: 100%;}
+}
+
+@media screen and (max-width:829px){
+    header {justify-content: center;
+            gap: 5px;}
+
+    nav ul {gap:0px;}
+}

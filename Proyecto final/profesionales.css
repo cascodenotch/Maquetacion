@@ -103,3 +103,13 @@ nav ul li a:hover{
 /* Ajustes de espacio */
 
 .espacio10 {margin-bottom: 10px;}
+
+/* Responsive */
+
+@media screen and (max-width:829px){
+    header {justify-content: center;
+            gap: 5px;}
+
+    nav ul {gap:0px;}
+}
+
