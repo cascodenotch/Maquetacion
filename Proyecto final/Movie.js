@@ -31,7 +31,7 @@ class Movie {
                  "<p>Productor: " + this.producer + "</p>" +
                  "<p>Distribuidor: " + this.distributor + "</p>" +
                  "<p>Personaje principal: " + this.mainCharacterName + "</p>" +
-                 "<p>MCU: " + this.isMCU + "</p>";
+                 "<p>MCU: " + (this.isMCU ? "Sí" : "No") + "</p>";
        
         return datos; 
     }
@@ -79,7 +79,7 @@ function añadir (){
     cajaAtributos.innerHTML = nuevaPeli.mostrarDatos();
 
     // añadir las nuevas cajas
-    cajaPrincipal = document.getElementById("principal")
+    let cajaPrincipal = document.getElementById("principal")
     cajaPrincipal.appendChild(nuevaCaja);
   
 }

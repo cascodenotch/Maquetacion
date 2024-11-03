@@ -9,39 +9,48 @@
 
 /* Header */
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
 header {
-
-    border: 1px solid red;
-    background-color: black;
+    border: 0px solid red;
+    background-color: #121212;
     color: white;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
 }
 
-nav {
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
-/* contenido */
+nav ul li a {
+    border: 0px solid yellow;
+    border-radius: 1cm;
+    text-decoration: none;
+    color: white;
+    font-size: large;          
+    font-weight: bold;
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    border-radius: 1cm;
+    background-color: #1A1A1A;
+}
+
+/* Cuerpo */
 
 .caja-principal {
 
-    border: 5px solid pink;
+    border: 0px solid pink;
     background-color: black;
     color: white;
-    height: auto;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -54,9 +63,9 @@ nav {
 }
 
 .caja-vertical {
-    background-color: #1A1A1A;
     border: 0px solid yellow;
     border-radius: 2px;
+    background-color: #1A1A1A;
     height: 350px;
     width: 350px;
     display: flex ;
@@ -64,16 +73,22 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 30px;
 }
 
+.caja-vertical:hover{
+    background-color: #F5C532;
+    color: black;
+   }
+
 .caja-atributos{
-    border: 5px solid salmon;
+    border: 0px solid salmon;
     height: 60%;
     width: 100%;
 }
 
 .caja-imagen{
-    border: 5px solid blue;
+    border: 0px solid blue;
     height: 40%;
     width: 100%;
     display: flex;
