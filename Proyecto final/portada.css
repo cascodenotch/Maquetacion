@@ -58,7 +58,7 @@ nav ul li a:hover{
     align-items: center;
 }
 
-.caja-horizontal {
+/* .caja-horizontal {
     
     border: 0px solid green;
     height: auto;
@@ -68,7 +68,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
+} */
 
 .caja-vertical {
     border: 0px solid yellow;
@@ -79,6 +79,20 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+/* Carrusel */
+
+#carouselExample{
+    width: 50%;
+}
+
+.carousel-control-prev-icon:hover{
+    border: 1px solid #F5C532;
+}
+
+.carousel-control-next-icon:hover{
+    border: 1px solid #F5C532;
 }
 
 
