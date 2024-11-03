@@ -39,7 +39,7 @@ class Movie {
     mostrarImagen (){
 
     let photoUrl = URL.createObjectURL(this.photo);
-    return "<img src=" + photoUrl + "</img>"
+    return `<img src="${photoUrl}"/>`;
 
     }
 }

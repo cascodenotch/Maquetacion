@@ -19,7 +19,7 @@ header {
     border: 1px solid red;
     background-color: black;
     color: white;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -65,6 +65,11 @@ nav {
     align-items: center;
     padding: 20px;
     gap: 5px;
+}
+
+.caja-vertical:hover{
+ background-color: #F5C532;
+ color: black;
 }
 
 .caja-atributos{
@@ -119,6 +124,11 @@ button{
     padding: 10px;
 }
 
+button:hover{
+    transform: scale(1.1) ;
+    transition: transform 1s;
+}
+
 .checkbox{
     display: flex;
     flex-direction: row;
@@ -136,10 +146,20 @@ button{
     font-size: smaller;
 }
 
+input:focus{
+    outline: 1px solid #F5C532;
+}
+
 
 /* Ajustes de espacio */
 
 .espacio10 {margin-bottom: 10px;}
+
+/* Ajustes de color */
+
+.texto-amarillo{
+    color: #F5C532;
+}
 
 /* responsive */
 

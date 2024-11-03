@@ -92,42 +92,43 @@
 <section class="caja-formulario">
     <form>
         <h2 class="espacio10">Añade una película al archivo</h2>
+        <p class="espacio10 texto-amarillo">Recuerda completar todos los campos.</p>
 
         <label for="titulo">Título</label>
-        <input type="text" id="titulo" name="titulo">
+        <input type="text" id="titulo" name="titulo" required>
 
         <label for="año">Año</label>
-        <input type="text" id="año" name="año">
+        <input type="number" id="año" name="año" required>
 
         <label for="genero">Género</label>
-        <input type="text" id="genero" name="genero">
+        <input type="text" id="genero" name="genero" required>
 
         <label for="nacionalidad">Nacionalidad</label>
-        <input type="text" id="nacionalidad" name="nacionalidad">
+        <input type="text" id="nacionalidad" name="nacionalidad" required>
 
         <label for="idioma">Idioma</label>
-        <input type="text" id="idioma" name="idioma">
+        <input type="text" id="idioma" name="idioma" required>
 
         <label for="plataforma">Plataforma</label>
-        <input type="text" id="plataforma" name="plataforma">
+        <input type="text" id="plataforma" name="plataforma" required>
 
         <label for="productor">Productor</label>
-        <input type="text" id="productor" name="productor">
+        <input type="text" id="productor" name="productor" required>
 
         <label for="distribuidor">Distribuidor</label>
-        <input type="text" id="distribuidor" name="distribuidor">
+        <input type="text" id="distribuidor" name="distribuidor" required>
 
-        <label for="personaje">Personaje</label>
-        <input type="text" id="personaje" name="personaje" class="espacio10">
+        <label for="personaje">Personaje principal</label>
+        <input type="text" id="personaje" name="personaje" class="espacio10" required>
 
         <div class="checkbox espacio10">
             <label for="isMCU">¿Es parte del MCU?</label>
-            <input type="checkbox" id="isMCU" name="isMCU">
+            <input type="checkbox" id="isMCU" name="isMCU" required>
             <span>Marca la casilla si la película forma parte del universo Marvel, de lo contrario, no la marques.</span>
         </div>
 
         <label for="foto">Foto</label>
-        <input type="file" id="foto" name="foto" class="espacio10">
+        <input type="file" id="foto" name="foto" class="espacio10" required>
         
         <button type="button" onclick="añadir()">Guardar</button>
     </form>
